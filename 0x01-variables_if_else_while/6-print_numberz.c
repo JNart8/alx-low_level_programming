@@ -6,11 +6,14 @@
  */
 int main(void)
 {
-	int n;
+	int d = 48;
 
-	for (n = 48 ; n < 58; n++)
-		putchar(n);
-	printf("\n");
+	while (d < 58)
+	{
+		putchar(d);
+		d++;
+	}
+		putchar('\n');
 	return (0);
 }
 
