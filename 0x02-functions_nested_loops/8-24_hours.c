@@ -24,13 +24,13 @@ void jack_bauer(void)
 			maxh = 3;
 		}
 		h1 = 0;
-		while (h1 <= a)
+		while (h1 <= maxh)
 		{
 			m2 = 0;
 			while (m2 <= 5)
 			{
 				m1 = 0;
-				while (m1 <=9)
+				while (m1 <= 9)
 				{
 					_putchar('0' + h2);
 					_putchar('0' + h1);
