@@ -19,7 +19,7 @@ void jack_bauer(void)
 	h2 = 0;
 	while (h2 <= 2)
 	{
-		if(h2 == 2)
+		if (h2 == 2)
 		{
 			maxh = 3;
 		}
@@ -40,11 +40,10 @@ void jack_bauer(void)
 					_putchar('\n');
 					m1++;
 				}
+				m2++;
 			}
-			m2++;
+			h1++;
 		}
-		h1++;
+		h2++;
 	}
-	h2++;
 }
-
