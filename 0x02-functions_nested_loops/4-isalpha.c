@@ -2,7 +2,7 @@
 
 /**
  * _isalph - checks for alphabetic character
- *
+ * @c: c is an ascii character
  * Return: 1 if letter, return 0 otherwise
  */
 
@@ -12,5 +12,7 @@ int _isalpha(int c)
 		return (1);
 	else if (c >= 'A' && c <= 'Z')
 		return (1);
-	else return (0);
+	else
+	       :wq	return (0);
 }
+
