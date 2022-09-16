@@ -4,11 +4,14 @@
  *
  *  Return: 0
  */
+
 int main(void)
 {
-	int i = 0;
-
+	int i;
+       
+	i = 0;
 	prositive_or_negetive(i);
 
 	return (0)
 }
+
