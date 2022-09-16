@@ -9,13 +9,13 @@
 
 int main(void)
 {
-	int num = 1;
+	int num;
 
-	for (n = 1; n <= 100; n++)
+	for (num = 1; num <= 100; num++)
 	{
-		if (n == 1)
+		if (num == 1)
 		{
-			printf("%d", n);
+			printf("%d", num);
 		}
 		else if ((num % 3) == 0) && (num % 5 == 0))
 		{
@@ -25,13 +25,13 @@ int main(void)
 		{
 			printf(" Fizz");
 		}
-		else if (n % 5 == 0)
+		else if (num % 5 == 0)
 		{
 			printf(" Buzz");
 		}
 		else
 		{
-			printf("%d ", num);
+			printf(" %d", num);
 		}
 	}
 	printf("\n");
