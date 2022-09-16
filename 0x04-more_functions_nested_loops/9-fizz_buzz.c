@@ -21,7 +21,14 @@ int main(void)
 		}
 		else if ((num % 5) == 0)
 		{
-			printf("Buzz");
+			if (num != 100)
+			{
+				printf("Buzz ");
+			}
+			else
+			{
+				printf("Buzz");
+			}
 		}
 		else
 		{
@@ -29,6 +36,7 @@ int main(void)
 		}
 	}
 	printf("\n");
+
 	return (0);
 }
 
