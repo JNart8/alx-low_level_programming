@@ -4,13 +4,13 @@
  * _strncat - concatenates two strings,
  * @dest: destination.
  * @src: source.
- * Return: the pointer to dest.
+ * Return: the pointer dest.
  */
 
 char *_strcat(char *dest, char *src)
 {
 	int count = 0;
-       	count2 = 0;
+	int count2 = 0;
 
 	while (*(dest + count) != '\0')
 	{
