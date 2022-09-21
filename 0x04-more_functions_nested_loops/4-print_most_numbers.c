@@ -21,4 +21,3 @@ void print_most_numbers(void)
 	}
 	putchar(10);
 }
-
