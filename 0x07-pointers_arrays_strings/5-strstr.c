@@ -16,12 +16,17 @@ char *_strstr(char *haystack, char *needle)
 		while (*needle)
 		{
 			if (*haystack++ != *needle++)
+			{
 				break;
+			}
 		}
 		if (!*needle)
+		{
 			return (result);
+		}
+
 		needle = fneedle;
-		results++;
+		result++;
 		haystack = result;
 	}
 	return (0);
