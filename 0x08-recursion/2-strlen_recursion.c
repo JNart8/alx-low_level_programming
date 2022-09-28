@@ -4,7 +4,7 @@
  * _strlen_recursion - returns length of strings
  * @s : input string
  *
- * Return : On success 1.
+ * Return: On success 1.
  * On error, -1 with appropriate errno.
  */
 
