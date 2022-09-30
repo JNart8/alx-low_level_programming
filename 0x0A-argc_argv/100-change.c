@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-
 /**
  *_isnumber - checks if string is a number
  * @s: string
@@ -29,6 +28,7 @@ int _isnumber(char *s)
 	}
 	return (check);
 }
+
 /**
  * main - Entry point
  *
@@ -36,6 +36,7 @@ int _isnumber(char *s)
  * @argv: Pointer of array of pointers containing strings entering main
  * Return: Always 0 (Success)
  */
+
 int main(int argc, char **argv)
 {
 	int j, ex, coins, cents, d;
