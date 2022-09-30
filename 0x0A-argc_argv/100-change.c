@@ -7,7 +7,6 @@
  * Return: 0 or 1
  */
 
-
 int isInteger(const char *s)
 {
 	int i = 0;
@@ -54,7 +53,6 @@ int main(int argc, char const *argv[])
 		}
 	}
 	printf("%i\n", coinUsed);
-
 	return (0);
 }
 
