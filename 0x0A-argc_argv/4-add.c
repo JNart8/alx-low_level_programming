@@ -20,7 +20,7 @@ int _isnumber(char *s)
 	for (; *(s + i) != 0; i++)
 	{
 		d = isdigit(*(s + i));
-		if(d == 0)
+		if (d == 0)
 		{
 			check = 0;
 			break;
@@ -58,3 +58,4 @@ int main(int argc, char **argv)
 		printf("%s\n", "Error");
 	return (ex);
 }
+
