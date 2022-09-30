@@ -1,73 +1,60 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 /**
- *_isnumber - checks if string is a number
- * @s: string
- *
- * Return: On success 1.
- * If not a number, 0 is returned.
+ * isInteger - checks if s is an integer
+ * @s: string to check
+ * Return: 0 or 1
  */
 
-int _isnumber(char *s)
-{
-	int i, check, d;
 
-	i = 0, d = 0, check = 1;
-	if (*s == '-')
-		i++;
-	for (; *(s + i) != 0; i++)
+int isInteger(const char *s)
+{
+	int i = 0;
+	while (s[i] != '\0')
 	{
-		d = isdigit(*(s + i));
-		if (d == 0)
-		{
-			check = 0;
-			break;
-		}
+		if (s[i] < '0' || s[i] > '9')
+			return (0);
+		i++;
 	}
-	return (check);
+	return (1);
 }
 
 /**
- * main - Entry point
- *
- * @argc: Counts the number of parameters that go into main
- * @argv: Pointer of array of pointers containing strings entering main
- * Return: Always 0 (Success)
+ * main - adds positive numbers
+ * @argc: int
+ * @argv: list
+ * Return: 0
  */
 
-int main(int argc, char **argv)
+int main(int argc, char const *argv[])
 {
-	int j, ex, coins, cents, d;
-	int c[5] = {25, 10, 5, 2, 1};
+	int i = 0, coinUsed = 0, coin = 0;
+	int coins[] = {25, 10, 5, 2, 1};
 
-	ex = 1, j = 0, coins = 0;
-	if (argc == 2)
+	if (argc != 2)
 	{
-		if (_isnumber(argv[1]))
+		printf("Error\n");
+		return (1);
+	}
+	if (isInteger(argv[1]))
+	{
+		i = atoi(argv[1]);
+		while (i > 0 && coin <= 4)
 		{
-			ex = 0, cents = atoi(argv[1]);
-			if (cents >= 0)
+			if (i >= coins[coin])
 			{
-				while (cents != 0)
-				{
-					d = centts / c[j];
-					if (d == 0)
-						j++;
-					else
-					{
-						coins += d;
-						cents -= (d * c[j]);
-					}
-				}
+				i -= coins[coin];
+				coinUsed++;
+			}
+			else
+			{
+				coin++;
 			}
 		}
 	}
-	if (ex == 0)
-		printf("%i\n", coins);
-	else
-		printf("%s\n", "Error");
-	return (ex);
+	printf("%i\n", coinUsed);
+
+	return (0);
 }
 
