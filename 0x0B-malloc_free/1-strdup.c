@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- *  *_strdup - allocate a string.
- *   *@str: string.
- *    *Return: pointer to string if success.
- *    */
+ * _strdup - allocate a string.
+ * @str: string.
+ * Return: pointer to string if success.
+ */
 
 char *_strdup(char *str)
 {
@@ -20,7 +20,7 @@ char *_strdup(char *str)
 	i++;
 	str1 = malloc(sizeof(char) * i);
 
-	if (str == NULL)
+	if (str1 == NULL)
 		return (NULL);
 
 	for (i = 0; str[i] != '\0'; i++)
