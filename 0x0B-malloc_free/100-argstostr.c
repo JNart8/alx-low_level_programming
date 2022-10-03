@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
- *  * argstostr - concatenates all the arguments of your program
- *   * @ac: argument count in main
- *    * @av: arguments passed to main
- *     *
- *      * Return: Pointer
- *       */
+ * argstostr - concatenates all the arguments of your program
+ * @ac: argument count in main
+ * @av: arguments passed to main
+ *
+ * Return: Pointer
+ */
 
 char *argstostr(int ac, char **av)
 {
@@ -33,13 +33,15 @@ char *argstostr(int ac, char **av)
 		lt = 0;
 		while (av[j][lt])
 		{
-																						*(s + k) = av[j][lt];
-																						k++;
-																						lt++;
-																					}
+			*(s + k) = av[j][lt];
+			k++;
+			lt++;
+		}
+
 		*(s + k) = '\n';
 		k++;
-																				}
-		*(s + k) = '\0';
+	}
+
+	*(s + k) = '\0';
 	return (s);
 }
