@@ -26,7 +26,7 @@ char *str_concat(char *s1, char *s2)
 
 	while (k < i)
 	{
-		s[k] = s2[k];
+		s[k] = si[k];
 		k++;
 	}
 
