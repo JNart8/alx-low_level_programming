@@ -1,12 +1,14 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * _wcount - counts number of words
  ** @sw: string
  *
  * Return: int
  */
+
 int _wcount(char *sw)
 {
 	int l, wc;
@@ -59,17 +61,20 @@ char **strtow(char *str)
 	if (s == 0)
 		return (0);
 	ts = _trspace(str);
+
 	for (i = 0; i < wc; i++)
 	{
 		l = 0;
 		while (*(ts + l) != ' ' && *(ts + l) != 0)
 			l++;
 		s[i] = malloc((l + 1) * sizeof(char));
+
 		if (s[i] == 0)
 		{
 			fr = 1;
 			break;
 		}
+
 		for (j = 0, l2 = 0; l2 < l; l2++, j++)
 			s[i][j] = *(ts + l2);
 		s[i][j] = '\0';
