@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
+
 /**
  * _strdup - returns a pointer to a newly allocated space in memory, which
  * contains a copy of the string given as a parameter.
@@ -21,6 +22,7 @@ char *_strdup(char *str)
 		l++;
 
 	s = malloc(sizeof(char) * l + 1);
+
 	if (s == 0)
 		return (0);
 
@@ -50,6 +52,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (0);
 
 	new_dog->name = _strdup(name);
+
 	if (new_dog->name == 0)
 	{
 		free(new_dog);
