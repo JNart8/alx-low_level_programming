@@ -1,12 +1,13 @@
 #include "dog.h"
 #include <stdlib.h>
-/*
+/**
  * _strdup - returns a pointer to a newly allocated space in memory, which
  * contains a copy of the string given as a parameter.
  * @str: string to copy
  *
  * Return: Pointer
  */
+
 char *_strdup(char *str)
 {
 	int l, i;
@@ -29,7 +30,7 @@ char *_strdup(char *str)
 	return (s);
 }
 
-/*
+/**
  * new_dog - creates a new dog
  * @name: name of dog
  * @age: age of dog
@@ -38,6 +39,7 @@ char *_strdup(char *str)
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
