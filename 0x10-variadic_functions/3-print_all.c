@@ -13,6 +13,7 @@ void print_all(const char * const format, ...);
  * @arg: A list of arguments pointing to
  *       the character to be printed.
  */
+
 void print_char(va_list arg)
 {
 	char letter;
@@ -93,7 +94,7 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(args, format);
-	
+
 	while (format && (*(format + i)))
 	{
 		j = 0;
