@@ -31,10 +31,12 @@ any main function.
     va_arg (man 3 va_arg)
 </h6>
 <h2>Tasks</h2>
+
 ## Mandatory Tasks
 - [x] Write function that produces output with conversion specifiers ```c```, ```s```, and ```%```.
 - [x] Handle conversion specifiers ```d```, ```i```.
 - [x] Create a man page for your function.
+
 ## Advanced Tasks
 - [x] Handle conversion specifier ```b```.
 - [x] Handle conversion specifiers ```u```, ```o```, ```x```, ```X```.
@@ -50,6 +52,7 @@ any main function.
 - [x] Handle the custom conversion specifier ```R``` that prints the rot13'ed string.
 - [x] All above options should work well together.
 <hr>
+
 ##File Descriptions
 <ul>
 <li><h4>0. -I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life</h4>
