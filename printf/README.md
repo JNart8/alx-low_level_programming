@@ -115,14 +115,6 @@ li> </li>
 Use a local buffer of 1024 chars in order to call write as little as possible.
 </p> </li>
 
-<li><h4>7. - My weakness is wearing too much leopard print</h4>
-
-<p>Handle the following custom conversion specifier:
-
-    S : prints the string.
-    Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: \x, followed by the ASCII code value in hexadecimal (upper case - always 2 characters)
-</p>
- </li>
 <li><h4>6. - How is the world ruled and led to war? Diplomats lie to journalists and believe these lies when they see them in print</h4>
 <p>Handle the following conversion specifier: p.
 
@@ -132,6 +124,16 @@ Use a local buffer of 1024 chars in order to call write as little as possible.
     You don’t have to handle the length modifiers
 </p>
  </li>
+
+<li><h4>7. - My weakness is wearing too much leopard print</h4>
+
+<p>Handle the following custom conversion specifier:
+
+    S : prints the string.
+    Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: \x, followed by the ASCII code value in hexadecimal (upper case - always 2 characters)
+</p>
+ </li>
+
 <li><h4>8.  -The big print gives and the small print takes away</h4>
 
 <p>Handle the following flag characters for non-custom conversion specifiers:
